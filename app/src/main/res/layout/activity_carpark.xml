@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".CarPark"
+    >
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="1100dp"
+            android:background="@drawable/background3"
+            >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#52000000"/>
+            <TextView
+                android:id="@+id/txt_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Parkerino"
+                android:textSize="44sp"
+                android:textColor="@color/colorWhite"
+                android:layout_gravity="center"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                app:fontFamily="@font/calligraffitti"/>
+
+            <TextView
+                android:id="@+id/txt_subtitle"
+                android:layout_below="@id/txt_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The best way to manage your car park!"
+                android:textSize="12sp"
+                android:textColor="@color/colorWhite"
+                android:layout_gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-25dp"
+                android:textStyle="bold"
+                app:fontFamily="@font/varela"/>
+            <TextView
+                android:id="@+id/xxx"
+                android:layout_below="@id/txt_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:gravity="center"
+                android:text="Welcome to the Parkerino! \n This is your top view of car park. \n You can see if the park area is full or empty."
+                android:textSize="12sp"
+                android:textColor="@color/colorWhite"
+                android:layout_gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="600dp"
+                app:fontFamily="@font/varela"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="670dp"
+                android:layout_marginLeft="55dp"
+                android:layout_marginRight="55dp"
+                android:background="#68FFFFFF"/>
+            <View
+                android:id="@+id/myview"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="725dp"
+                android:layout_marginLeft="55dp"
+                android:layout_marginRight="55dp"
+                android:background="#68FFFFFF"/>
+
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/rel2"
+                android:layout_width="600dp"
+                android:layout_height="600dp"
+                android:layout_marginTop="20sp">
+
+                <TextView
+                    android:onClick="fillArea"
+                    android:id="@+id/park1"
+                    android:layout_width="150dp"
+                    android:layout_height="96dp"
+                    android:background="#ff00ff00"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:text="Area 1"
+                    android:layout_marginTop="90dp"
+                    android:layout_marginLeft="12dp"/>
+                <TextView
+                    android:onClick="fillArea"
+                    android:id="@+id/park2"
+                    android:layout_width="150dp"
+                    android:layout_height="96dp"
+                    android:background="#ff00ff00"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:text="Area 2"
+                    android:layout_below="@+id/park1"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginLeft="12dp"/>
+                <TextView
+                    android:onClick="fillArea"
+                    android:id="@+id/park3"
+                    android:layout_width="150dp"
+                    android:layout_height="96dp"
+                    android:background="#ff00ff00"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:text="Area 3"
+                    android:layout_below="@+id/park2"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginLeft="12dp"/>
+                <TextView
+                    android:onClick="fillArea"
+                    android:id="@+id/park4"
+                    android:layout_width="150dp"
+                    android:layout_height="96dp"
+                    android:background="#ff00ff00"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:text="Area 4"
+                    android:layout_below="@+id/park3"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginLeft="12dp"/>
+                <TextView
+                    android:onClick="fillArea"
+                    android:id="@+id/park5"
+                    android:layout_width="150dp"
+                    android:layout_height="96dp"
+                    android:background="#ff00ff00"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:text="Area 5"
+                    android:layout_marginTop="90dp"
+                    android:layout_marginLeft="245dp"/>
+                <TextView
+                    android:onClick="fillArea"
+                    android:id="@+id/park6"
+                    android:layout_width="150dp"
+                    android:layout_height="96dp"
+                    android:background="#ff00ff00"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:layout_below="@+id/park5"
+                    android:text="Area 6"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginLeft="245dp"/>
+                <TextView
+                    android:onClick="fillArea"
+                    android:id="@+id/park7"
+                    android:layout_width="150dp"
+                    android:layout_height="96dp"
+                    android:background="#ff00ff00"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:text="Area 7"
+                    android:layout_below="@+id/park6"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginLeft="245dp"/>
+                <TextView
+                    android:onClick="fillArea"
+                    android:id="@+id/park8"
+                    android:layout_width="150dp"
+                    android:layout_height="96dp"
+                    android:background="#ff00ff00"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:layout_below="@+id/park7"
+                    android:text="Area 8"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginLeft="245dp"/>
+
+
+
+
+
+
+            </RelativeLayout>
+
+            <ListView
+                android:layout_below="@+id/xxx"
+                android:id="@+id/mylist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
